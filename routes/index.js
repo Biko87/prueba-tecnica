@@ -4,15 +4,15 @@ var router = express.Router();
 /* Connection DB*/
 var connection = require ('../database/db.js');
 /*Selection table DB and results err connection*/
-/*router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
   connection.query('SELECT * FROM users', (error, results)=>{
     if (error) {
        throw error;
     }else{
-      res.send(results);
+      res.render('index', {results:results});
     }
   });
-});*/
+});
 
 
 
