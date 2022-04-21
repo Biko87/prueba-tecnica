@@ -26,4 +26,13 @@ router.get('/contacto', function(req, res, next) {
   res.render('Contacto', { title: 'Contactenos' });
 });
 
+
+/*Route create register*/
+router.get('/create', function(req, res, next) {
+  res.render('create');
+});
+
+const crud = require('../controllers/crud');
+router.post('/save', crud.save);
+
 module.exports = router;
