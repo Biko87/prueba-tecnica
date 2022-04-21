@@ -15,7 +15,7 @@
                         <label for="user" class="form-label">Rol</label>
                         <select class="form-select" name="rol" id="rol" aria-label="Default select exmple">
                             <option <%= user.rol=='admin' ? "selected" : '' %>  value="admin" selected>Admin</option>
-                            <option <%= user.rol=='data entry' ? "selected" : '' %> value="data entry">Data Entry</option>
+                            <option <%= user.rol=='usuario' ? "selected" : '' %> value="usuario">Usuario</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
