@@ -54,7 +54,7 @@ router.get('/delete/:id', (req, res)=>{
   });
 })
 
-
+/*Invoca al crud*/
 const crud = require('../controllers/crud');
 router.post('/save', crud.save);
 router.post('/update', crud.update);
